@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+ul {
+    list-style: none;
+    display: flex;
+}
+h2 {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+form {
+    font-size: 1.2rem;
+}
+hr {
+    border: 1px solid black;
+}
+select {
+    font-size: 1.2rem;
+}
+ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.75rem;
+    margin-left: 4rem;
+}
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+.card {
+    background-color: #EEEEEE;
+    width: 23%;
+    padding: 1.5rem 0;
+    font-size: 1.25rem;
+}
+.hottest-coldest {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+    font-weight: 500;
+}
+.hottest {
+    color: #CF2B27;
+}
+.coldest {
+    color: #2B78E4;
+}
+.card h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+.card img {
+    width: 75%;
+    border-radius: 50%;
+    padding: 1.5rem 0;
+}
+#nav {
+    background-color: #9FC5F8;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 15%;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#card-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+#cookie {
+    position: fixed;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    background-color: #EEEEEE;
+    padding: 1rem 2rem;
+}
+#cookie div {
+    width: 65%;
+    font-size: 1.35rem;
+    font-weight: 300;
+}
+#accept-btn {
+    background-color: #A0C5F8;
+    padding: 8px 16px;
+    border: 3px solid black;
+    box-shadow: 3px 3px 0 black;
+    font-size: 20px;
+}

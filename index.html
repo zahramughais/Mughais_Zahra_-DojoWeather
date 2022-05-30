@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Dojo Weather</title>
+</head>
+<body>
+    <div id="nav">
+        <h1>Dojo Weather</h1>
+        <ul>
+            <li>
+                <a href="#" onclick="alert('loading weather report...')">Burbank</a>
+            </li>
+            <li>
+                <a href="#" onclick="alert('loading weather report...')">Chicago</a>
+            </li>
+            <li>
+                <a href="#" onclick="alert('loading weather report...')">Dallas</a>
+            </li>
+        </ul>
+    </div>
+    <div id="main" class="wrapper">
+        <div id="header">
+            <h2>San Jose</h2>
+            <form action="">
+                <label for="tempConversion">show temperature in </label>
+                <select name="tempConversion" id="tempConversion" onchange="tempConv(this)">
+                    <option value="C">°C</option>
+                    <option value="F">°F</option>
+                </select>
+            </form>
+        </div>
+        <hr>
+        <div id="card-container">
+            <div class="card">
+                <h3>Today</h3>
+                <img src="assets/some_rain.png" alt="rainy">
+                <p>some rain</p>
+                <div class="hottest-coldest">
+                    <p class="hottest"><span>24</span>°</p>
+                    <p class="coldest"><span>18</span>°</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Tomorrow</h3>
+                <img src="assets/some_sun.png" alt="sunny">
+                <p>some sun</p>
+                <div class="hottest-coldest">
+                    <p class="hottest"><span>27</span>°</p>
+                    <p class="coldest"><span>19</span>°</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Friday</h3>
+                <img src="assets/some_clouds.png" alt="cloudy">
+                <p>some clouds</p>
+                <div class="hottest-coldest">
+                    <p class="hottest"><span>21</span>°</p>
+                    <p class="coldest"><span>16</span>°</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Saturday</h3>
+                <img src="assets/some_sun.png" alt="sunny">
+                <p>some sun</p>
+                <div class="hottest-coldest">
+                    <p class="hottest"><span>26</span>°</p>
+                    <p class="coldest"><span>21</span>°</p>
+                </div>
+            </div>
+        </div>
+        <div id="cookie">
+            <img src="assets/cookie.png" alt="cookie">
+            <div>
+                <h3>Stop! Cookie time</h3>
+                <p>
+                    We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media
+                    features and to analyse our traffic. <a href="#">Read more...</a>
+                </p>
+            </div>
+            <button id="accept-btn" onclick="dismiss()">I Accept</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
